@@ -1,0 +1,8 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<div th:if="${mascotaCreadaCorrectamente}" class="alert alert-success" role="alert"></div>
+
+<div th:unless="${mascotaCreadaCorrectamente}" class="alert alert-danger" role="alert" th:text="${mensaje}"></div>
+</body>
+</html>
