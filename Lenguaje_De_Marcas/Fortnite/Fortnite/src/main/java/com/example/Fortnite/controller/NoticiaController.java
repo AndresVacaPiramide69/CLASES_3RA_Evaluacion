@@ -11,7 +11,7 @@ import java.util.ArrayList;
 @Controller
 public class NoticiaController {
 
-    @GetMapping("/index.html")
+    @GetMapping("/index")
     public String mostrar_noticias(Model model){
 
         ArrayList<Noticia> carruselArrayList = new ArrayList<>();

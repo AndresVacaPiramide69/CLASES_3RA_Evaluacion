@@ -1,12 +1,20 @@
 package com.example.Fortnite.classes;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
 public class Idioma {
 
-    private int id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String codigo;
     private String nombre;
 
-    protected Idioma(){}
+    public Idioma(){}
 
     public Idioma(String codigo, String nombre) {
         this.codigo = codigo;
@@ -27,6 +35,14 @@ public class Idioma {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     @Override

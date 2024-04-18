@@ -11,6 +11,7 @@ public class Noticia {
         this.descripcionNoticia = descripcionNoticia;
         this.urlImagen = urlImagen;
     }
+
     public Noticia(String titulo, String descripcionNoticia){
         this.titulo = titulo;
         this.descripcionNoticia = descripcionNoticia;

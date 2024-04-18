@@ -11,7 +11,7 @@
     <nav class="py-3 border-bottom text-light bg-dark">
         <div class="container d-flex flex-wrap">
             <ul class="nav me-auto">
-                <li class="nav-item"><a th:href="@{index.html}" class="nav-link link-body-emphasis px-3 active text-secondary"
+                <li class="nav-item"><a th:href="@{index}" class="nav-link link-body-emphasis px-3 active text-secondary"
                                         aria-current="page">FORTNITE</a></li>
                 <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3 text-light">Descubre</a></li>
                 <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3 text-light">Mi biblioteca</a>
@@ -39,16 +39,16 @@
     </div>
 
 </div>
-<form action="" method="post">
+<form th:action="@{/guardar_idioma}" th:object="${Idioma}" method="post">
     <div class="row gy-3">
         <div class="col"></div>
         <div class="col-md-4">
-            <label for="codigo_idioma" class="form-label">Código</label>
-            <input type="text" class="form-control" id="codigo_idioma" placeholder="Código">
+            <label for="codigo" class="form-label">Código</label>
+            <input type="text" th:field="*{codigo}" class="form-control" id="codigo" placeholder="Código">
         </div>
         <div class="col-md-4">
-            <label for="nombre_idioma" class="form-label">Nombre</label>
-            <input type="text" class="form-control" id="nombre_idioma" placeholder="Nombre">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" th:field="*{nombre}" class="form-control" id="nombre" placeholder="Nombre">
         </div>
         <div class="col"></div>
     </div>

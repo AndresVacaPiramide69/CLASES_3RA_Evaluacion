@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="06b3e47a-46ae-4de2-b303-9aef9e23306f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/resources/templates/guardar_idioma.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RealizacionDeTest-ED/src/main/java/org/example/Ejemplo1/TestUnitarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RealizacionDeTest-ED/src/main/java/org/example/Ejemplo1/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../RealizacionDeTest-ED/src/test/java/TestUnitariosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Sistemas_informaticos/APUNTES/Config - Routers/Router0_startup-config.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Sistemas_informaticos/APUNTES/ejemplo_pablo.pkt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/classes/Idioma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/classes/Idioma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/classes/Noticia.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/classes/Noticia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/controller/IdiomaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/controller/IdiomaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/controller/NoticiaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/controller/NoticiaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/repository/IdiomaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/java/com/example/Fortnite/repository/IdiomaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/resources/templates/crear_idioma.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/resources/templates/crear_idioma.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lenguaje_De_Marcas/Fortnite/Fortnite/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Sistemas_informaticos/APUNTES/apunte1.pkt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Sistemas_informaticos/APUNTES/apunte1.pkt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2f8VZkhA5ZHnYyQRs8zZqJMQQkc" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/andre/OneDrive/Escritorio/CLASES_GitHub/CLASES_3RA_Evaluacion/Programacion/Ejercicios/untitled",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/andre/OneDrive/Escritorio/CLASES_GitHub/CLASES_3RA_Evaluacion/Programacion/Ejercicios/untitled/src/main/java/org/example/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="06b3e47a-46ae-4de2-b303-9aef9e23306f" name="Changes" comment="" />
+      <created>1713182749726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713182749726</updated>
+      <workItem from="1713182751069" duration="696000" />
+      <workItem from="1713191805722" duration="33000" />
+      <workItem from="1713264526775" duration="40000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
