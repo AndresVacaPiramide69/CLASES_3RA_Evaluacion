@@ -5,34 +5,47 @@ import jakarta.persistence.*;
 import java.util.StringJoiner;
 
 @Entity
-@Table(name = "metodo_de_pago")
-public class MetodoPago {
+@Table(name = "tarjeta_de_credito")
+public class TarjetaDeCredito {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "numero_tarjeta")
-    private String numeroTarjeta;
+    @Column(name = "numero_de_tarjeta")
+    private int numeroTarjeta;
 
-    @Column(name = "mes_tarjeta")
+    @Column(name = "mes")
     private int mesTarjeta;
 
     @Column(name = "year_tarjeta")
     private int yearTarjeta;
 
-    @OneToOne
-    @JoinColumn(name = "fk_id_usuario", referencedColumnName = "id")
+    @Column(name = "cvv")
+    private int cvvTarjeta;
+
+    @OneToOne(mappedBy = "tarjetaDeCredito")
     private Usuario usuario;
+
+    public TarjetaDeCredito() {}
+
+    public TarjetaDeCredito(int numeroTarjeta, int mesTarjeta, int yearTarjeta, int cvvTarjeta, Usuario usuario) {
+        this.numeroTarjeta = numeroTarjeta;
+        this.mesTarjeta = mesTarjeta;
+        this.yearTarjeta = yearTarjeta;
+        this.cvvTarjeta = cvvTarjeta;
+        this.usuario = usuario;
+    }
 
     public Long getId() {
         return id;
     }
 
-    public String getNumeroTarjeta() {
+    public int getNumeroTarjeta() {
         return numeroTarjeta;
     }
 
-    public void setNumeroTarjeta(String numeroTarjeta) {
+    public void setNumeroTarjeta(int numeroTarjeta) {
         this.numeroTarjeta = numeroTarjeta;
     }
 
@@ -52,6 +65,14 @@ public class MetodoPago {
         this.yearTarjeta = yearTarjeta;
     }
 
+    public int getCvvTarjeta() {
+        return cvvTarjeta;
+    }
+
+    public void setCvvTarjeta(int cvvTarjeta) {
+        this.cvvTarjeta = cvvTarjeta;
+    }
+
     public Usuario getUsuario() {
         return usuario;
     }
@@ -62,11 +83,12 @@ public class MetodoPago {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", MetodoPago.class.getSimpleName() + "[", "]")
+        return new StringJoiner(", ", TarjetaDeCredito.class.getSimpleName() + "[", "]")
                 .add("id=" + id)
-                .add("numeroTarjeta='" + numeroTarjeta + "'")
+                .add("numeroTarjeta=" + numeroTarjeta)
                 .add("mesTarjeta=" + mesTarjeta)
                 .add("yearTarjeta=" + yearTarjeta)
+                .add("cvvTarjeta=" + cvvTarjeta)
                 .add("usuario=" + usuario)
                 .toString();
     }

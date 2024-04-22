@@ -20,6 +20,20 @@ public class Usuario {
     @Column(name = "password_usuario")
     private String passwordUsuario;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "fk_id_tarjeta_de_credito", referencedColumnName = "id")
+    private TarjetaDeCredito tarjetaDeCredito;
+
+    public Usuario(){
+    }
+
+    public Usuario(String nombreUsuario, String emailUsuario, String passwordUsuario, TarjetaDeCredito tarjetaDeCredito) {
+        this.nombreUsuario = nombreUsuario;
+        this.emailUsuario = emailUsuario;
+        this.passwordUsuario = passwordUsuario;
+        this.tarjetaDeCredito = tarjetaDeCredito;
+    }
+
     public Long getId() {
         return id;
     }
@@ -48,6 +62,15 @@ public class Usuario {
         this.passwordUsuario = passwordUsuario;
     }
 
+    public TarjetaDeCredito getTarjetaDeCredito() {
+        return tarjetaDeCredito;
+    }
+
+    public void setTarjetaDeCredito(TarjetaDeCredito tarjetaDeCredito) {
+        this.tarjetaDeCredito = tarjetaDeCredito;
+    }
+
+
     @Override
     public String toString() {
         return new StringJoiner(", ", Usuario.class.getSimpleName() + "[", "]")
@@ -55,6 +78,7 @@ public class Usuario {
                 .add("nombreUsuario='" + nombreUsuario + "'")
                 .add("emailUsuario='" + emailUsuario + "'")
                 .add("passwordUsuario='" + passwordUsuario + "'")
+                .add("tarjetaDeCredito=" + tarjetaDeCredito)
                 .toString();
     }
 }

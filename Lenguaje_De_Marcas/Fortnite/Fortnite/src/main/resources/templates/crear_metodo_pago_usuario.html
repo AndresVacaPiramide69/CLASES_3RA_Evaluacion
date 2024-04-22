@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8" />
+    <title>Fortnite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<header>
+    <nav class="py-3 border-bottom text-light bg-dark">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a th:href="@{index}" class="nav-link link-body-emphasis px-3 active text-secondary"
+                                        aria-current="page">FORTNITE</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3 text-light">Descubre</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3 text-light">Mi biblioteca</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3 text-light">Crea</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3 text-light">Noticias</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3 text-light">Pase de Batalla</a>
+                </li>
+                <li class="nav-item"><a href="#" class="nav-link link-body-emphasis px-3 text-light">Más</a></li>
+            </ul>
+            <ul class="nav">
+                <li>
+                    <button type="button" class="btn btn-warning">Descargar</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-4">
+            <h1>Crear Usuario</h1>
+        </div>
+        <div class="col-4"></div>
+        <div class="col"></div>
+    </div>
+</div>
+<form th:action="@{/guardar_metodo_pago_usuario}" th:object="${usuario}" method="post">
+    <div class="container border-top mt-3">
+        <div class="row">
+            <div class="col-5">
+                <div class="mb-3 mt-3">
+                    <label for="correo_usuario" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="correo_usuario" placeholder="name@example.com" required th:field="*{emailUsuario}">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="passwd_usuario" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwd_usuario" required th:field="*{passwordUsuario}">
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="mb-3 mt-3">
+                    <label for="nombre_usuario" class="form-label">Nombre de usuario</label>
+                    <input type="text" class="form-control" id="nombre_usuario" required th:field="*{nombreUsuario}">
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+
+    <div class="container border-top mt-3">
+        <div class="row">
+            <div class="col-4 mt-3">
+                <h2>Método de pago</h2>
+            </div>
+            <div class="col-4"></div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-7">
+                <div class="mb-3 mt-3">
+                    <label for="numero_tarjeta_usuario" class="form-label">Número de tarjeta</label>
+                    <input type="email" class="form-control" id="numero_tarjeta_usuario" placeholder="name@example.com" required th:field="*{tarjetaDeCredito.setNumeroTarjeta()}">
+                </div>
+                    <!--<div class="row">
+                        <div class="col-3">
+                            <div class="mb-3 mt-3">
+                                <label for="mes_tarjeta_usuario" class="form-label">Mes</label>
+                                <input type="number" class="form-control" id="mes_tarjeta_usuario" required th:field="*{tarjetaDeCredito.setMesTarjeta()}" min="01" max="12">
+                            </div>
+                            <div class="mb-3">
+                                <input class="btn btn-primary" type="submit" value="Crear" min="2" max="2">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3 mt-3">
+                                <label for="year_tarjeta_usuario" class="form-label">Año</label>
+                                <input type="number" class="form-control" id="year_tarjeta_usuario" required th:field="*{tarjetaDeCredito.setYearTarjeta()}" min="2020" max="2030">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="mb-3 mt-3">
+                                <label for="cvv_tarjeta_usuario" class="form-label">CVV</label>
+                                <input type="number" class="form-control" id="cvv_tarjeta_usuario" required th:field="*{tarjetaDeCredito.setCvvTarjeta()}" min="0" max="999">
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</form>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
